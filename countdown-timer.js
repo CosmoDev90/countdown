@@ -1,6 +1,6 @@
 $(document).ready(function(){
    document.getElementById('countdown').innerHTML = 'WEDDING IS HERE!';
-});
+})();
 
 /*
 
