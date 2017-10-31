@@ -1,4 +1,6 @@
-document.getElementById('countdown').innerHTML = 'WEDDING IS HERE!';
+$(document).ready(function(){
+   document.getElementById('countdown').innerHTML = 'WEDDING IS HERE!';
+});
 
 /*
 
