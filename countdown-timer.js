@@ -7,7 +7,7 @@ const _day = _hour * 24;
 let timer = '';
 
 function spanFormat(time, text) {
-    return '<span class="count">' + time + '</span>' + ' ' + '<span class="txt">' + text + '</span>';
+    return '<div class="countpart">' + '<div class="txt">' + text + '</div>' + '<div class="count">' + time + '</div>' + '</div>';
 }
 
 function showRemaining() {
@@ -25,10 +25,10 @@ function showRemaining() {
     const minutes = Math.floor((distance % _hour) / _minute);
     const seconds = Math.floor((distance % _minute) / _second);
 
-    document.getElementById('countdown').innerHTML = spanFormat(days, 'days ');
-    document.getElementById('countdown').innerHTML += spanFormat(hours, 'hrs ');
-    document.getElementById('countdown').innerHTML += spanFormat(minutes, 'mins ');
-    document.getElementById('countdown').innerHTML += spanFormat(seconds, 'secs');
+    document.getElementById('countdown').innerHTML = spanFormat(days, 'Days ');
+    document.getElementById('countdown').innerHTML += spanFormat(hours, 'Hrs ');
+    document.getElementById('countdown').innerHTML += spanFormat(minutes, 'Mins ');
+    document.getElementById('countdown').innerHTML += spanFormat(seconds, 'Secs');
 }
 
 timer = setInterval(showRemaining, 1000);
