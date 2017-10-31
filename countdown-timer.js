@@ -4,7 +4,7 @@ const _second = 1000;
 const _minute = _second * 60;
 const _hour = _minute * 60;
 const _day = _hour * 24;
-const timer;
+const timer = '';
 
 function showRemaining() {
     const now = new Date();
