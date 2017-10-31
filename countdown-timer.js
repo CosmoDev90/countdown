@@ -1,9 +1,3 @@
-$(document).ready(function(){
-   document.getElementById('countdown').innerHTML = 'WEDDING IS HERE!';
-})();
-
-/*
-
 const end = new Date('02/28/2019 2:30 PM'); // 16:30 in Finland
 
 const _second = 1000;
@@ -34,5 +28,3 @@ function showRemaining() {
 }
 
 timer = setInterval(showRemaining, 1000);
-
-*/
